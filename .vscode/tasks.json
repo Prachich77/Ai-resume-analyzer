@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Resume Analyzer",
+      "type": "shell",
+      "command": "call venv\\Scripts\\activate.bat && python -m streamlit run app.py",
+      "options": {
+        "cwd": "C:\\Users\\dell\\Desktop\\AI-RESUME",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
